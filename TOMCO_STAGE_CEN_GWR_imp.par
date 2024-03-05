@@ -1,0 +1,8 @@
+directory=REFRESH
+dumpfile=TOMCO_PROD_cen_gwr_exp.dmp
+logfile=TOMCO_PROD_cen_gwr_imp.log
+remap_schema=CEN510P:CEN510_S,GWR602TOMCO:GWR602_S
+TRANSFORM=DISABLE_ARCHIVE_LOGGING:Y
+transform=OID:N
+table_exists_action=replace
+##exclude=TABLE:"LIKE '%EVT_SQLTOUSER%'"

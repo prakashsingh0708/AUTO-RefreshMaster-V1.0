@@ -1,0 +1,8 @@
+directory=DB_REFRESH
+#dumpfile=TOMCO_PROD_cen_gwr_exp.dmp
+logfile=TOMCO_PROD_cen_gwr_ESTIMATE_ONLY_exp.log
+schemas=CEN510P,GWR602TOMCO
+exclude=sequence
+exclude=STATISTICS
+#REUSE_DUMPFILES=YES
+ESTIMATE_ONLY=Y

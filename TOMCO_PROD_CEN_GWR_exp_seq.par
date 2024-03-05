@@ -1,0 +1,6 @@
+directory=DB_REFRESH
+dumpfile=TOMCO_PROD_cen_gwr_exp_seq.dmp
+logfile=TOMCO_PROD_cen_gwr_exp_seq.log
+schemas=CEN510P,GWR602TOMCO
+include=sequence
+REUSE_DUMPFILES=YES

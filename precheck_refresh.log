@@ -1,0 +1,47 @@
+SQL> set echo on;
+SQL> select * from (select verlabqa,verdatqa from CEN510P.version order by verdatqa desc) where rownum<=50;
+select * from (select verlabqa,verdatqa from CEN510P.version order by verdatqa desc) where rownum<=50
+                                                     *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> select * from (select verlabqa,verdatqa from GWR602TOMCO.version order by verdatqa desc) where rownum<=50;
+select * from (select verlabqa,verdatqa from GWR602TOMCO.version order by verdatqa desc) where rownum<=50
+                                                         *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> 
+SQL> 
+SQL> col owner for a30;
+SQL> set lines 300 pages 300;
+SQL> select owner,sum(bytes/1024/1024/1024) ||'G' from dba_segments group by owner order by sum(bytes/1024/1024/1024) desc;
+
+OWNER                          SUM(BYTES/1024/1024/1024)||'G'                                                                                                                                                                                                                                               
+------------------------------ -----------------------------------------                                                                                                                                                                                                                                    
+CEN510_S                       498.82733154296875G                                                                                                                                                                                                                                                          
+PERFSTAT                       98.007568359375G                                                                                                                                                                                                                                                             
+GII600TOMCO                    30.68194580078125G                                                                                                                                                                                                                                                           
+SYS                            22.10845947265625G                                                                                                                                                                                                                                                           
+AUDSYS                         12.45477294921875G                                                                                                                                                                                                                                                           
+GWR602_S                       8.75482177734375G                                                                                                                                                                                                                                                            
+SYSTEM                         5.742919921875G                                                                                                                                                                                                                                                              
+CTXSYS                         1.47314453125G                                                                                                                                                                                                                                                               
+MDSYS                          .24359130859375G                                                                                                                                                                                                                                                             
+XDB                            .06695556640625G                                                                                                                                                                                                                                                             
+EVT510_S                       .04559326171875G                                                                                                                                                                                                                                                             
+ORDDATA                        .015869140625G                                                                                                                                                                                                                                                               
+WMSYS                          .00640869140625G                                                                                                                                                                                                                                                             
+DVSYS                          .00537109375G                                                                                                                                                                                                                                                                
+DBSNMP                         .00189208984375G                                                                                                                                                                                                                                                             
+GSMADMIN_INTERNAL              .0015869140625G                                                                                                                                                                                                                                                              
+OUTLN                          .00054931640625G                                                                                                                                                                                                                                                             
+ORDSYS                         .00042724609375G                                                                                                                                                                                                                                                             
+OJVMSYS                        .0003662109375G                                                                                                                                                                                                                                                              
+LBACSYS                        .00030517578125G                                                                                                                                                                                                                                                             
+
+20 rows selected.
+
+SQL> exit

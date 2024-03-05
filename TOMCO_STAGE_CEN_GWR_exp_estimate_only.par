@@ -1,0 +1,6 @@
+directory=REFRESH
+#dumpfile=TOMCO_STAGE_CEN_GWR_exp.dmp
+logfile=TOMCO_STAGE_CEN_GWR_ESTIMATE_ONLY_exp.log
+schemas=CEN510_S,GWR602_S
+#REUSE_DUMPFILES=YES
+estimate_only=Y

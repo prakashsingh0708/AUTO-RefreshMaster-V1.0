@@ -1,0 +1,17 @@
+Export: Release 11.2.0.4.0 - Production on Sat Dec 23 16:01:16 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates. All rights reserved.
+
+Username: / as sysdba
+
+Connected to: Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 - 64bit Production
+With the Partitioning, Real Application Clusters, Automatic Storage Management, OLAP,
+Data Mining and Real Application Testing options
+Starting "SYS"."SYS_EXPORT_TABLESPACE_01": /******** AS SYSDBA TABLESPACES=USERS estimate_only=Y NOLOGFILE=YES
+Estimate in progress using STATISTICS method...
+
+Processing object type TABLE_EXPORT/TABLE/TABLE_DATA
+. estimated "CBCM"."CUST_FADS_2548_HIST_GAL" 21.91 GB
+. estimated "CBCM"."CUST_FADS_1359_HIST_GAL" 11.76 GB
+Total estimation using BLOCKS method: 633.67 GB
+Job "SYS"."SYS_EXPORT_TABLESPACE_01" successfully completed at Sat Dec 23 15:56:22 2017 elapsed 0 00:5:57
